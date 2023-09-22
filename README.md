@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import stdout from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdout@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/streams-node-stdout/tags). For example,
+
+```javascript
 import stdout from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdout@v0.1.0-esm/index.mjs';
 ```
 
@@ -86,7 +91,7 @@ stdout.write( 'beep', 'utf8' );
 
 var proc = require( 'process' );
 import stdin from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdin@esm/index.mjs';
-import stdout from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdout@v0.1.0-esm/index.mjs';
+import stdout from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-stdout@esm/index.mjs';
 
 // Set the encoding:
 stdin.setEncoding( 'utf8' );
